@@ -36,7 +36,7 @@ return data.rates.map(({ currency, rate }) => (
 }
 
   const linkChain = createPersistedQueryLink({ sha256, useGETForHashedQueries: true }).concat(
-  new HttpLink({ uri: "http://localhost:4000/graphql" }));
+  new HttpLink({ uri: "http://localhost:30002/graphql" }));
 
   const client = new ApolloClient({
     cache: new InMemoryCache(),
